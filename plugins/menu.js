@@ -132,7 +132,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
       "listMessage": {
         "title": "Daftar Menu",
-        "description": "© stikerin",
+        "description": "® Doraemond",
         "buttonText": "Klik Disini",
         "listType": "SINGLE_SELECT",
         "sections": [
