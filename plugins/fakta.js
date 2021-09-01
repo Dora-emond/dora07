@@ -1,6 +1,6 @@
 let axios = require("axios");
 let handler = async(m, { conn, text }) 
-=> {await conn.sendButton(m.chat, `“${pickRandom(global.fakta)}”`, '', 'FAKTA', `${usedPrefix + command}`)
+=> {await conn.sendButton(m.chat,'fakta','FAKTA')
 }
 => {axios.get(`http://zekais-api.herokuapp.com/fakta`).then ((res) 
 => {let hasil = `${res.data.result}`
