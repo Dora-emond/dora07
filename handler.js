@@ -441,8 +441,8 @@ ketik *.on delete* untuk mematikan pesan ini
         break
     }
     user.call += 1
-    await this.reply(from, `Jika kamu menelepon lebih dari 5, kamu akan diblokir.\n\n${user.call} / 5`, null)
-    if (user.call == 5) {
+    await this.reply(from, `Jika kamu menelepon lebih dari 1, kamu akan diblokir.\n\n${user.call} / 5`, null)
+    if (user.call == 1) {
       await this.blockUser(from, 'add')
       user.call = 0
     }
