@@ -440,11 +440,8 @@ ketik *.on delete* untuk mematikan pesan ini
           return
         break
     }
-    user.call += 1
-    await this.reply(from, `Jika kamu menelepon lebih dari 1, kamu akan diblokir.\n\n${user.call} / 1`, null)
-    if (user.call == 1) {
-      await this.blockUser(from, 'add')
-      user.call = 0
+    await this.sendMessage(from, 'Maaf, karena anda menelfon dora. anda diblokir otomatis, hubungi owner dora agar bisa di unblock lagi 😇', MessageType.extendedText)
+    await this.blockUser(from, 'add')
     }
   },
   async GroupUpdate({ jid, desc, descId, descTime, descOwner, announce }) {
