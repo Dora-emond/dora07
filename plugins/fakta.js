@@ -1,10 +1,11 @@
 let axios = require("axios");
-let handler = async(m, { conn, text }) 
+let handler = async(m, { conn, text }) => {
 
-=> {axios.get(`http://zekais-api.herokuapp.com/fakta`).then ((res) 
-=> {let hasil = `${res.data.result}`
-conn.reply(m.chat, hasil, m)
-})
+	axios.get(`http://zekais-api.herokuapp.com/fakta`).then ((res) => {
+	 	let hasil = `${res.data.result}`
+
+    conn.reply(m.chat, hasil, m)
+	})
 }
 handler.help = ['fakta']
 handler.tags = ['quotes']
