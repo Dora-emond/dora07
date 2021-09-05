@@ -17,9 +17,13 @@ const defaultMenu = {
 │
 ├ Uptime: *%uptime (%muptime)*
 ├ Database: %rtotalreg dari %totalreg
+│
+├ Thank buat para creator bot 😇
+│
 ├ Berusahalah untuk patah semangat
 ├ dan tetaplah menjadi pecundang
 ├ hidupmu adalah kesia siaan.
+│
 └────
 %readmore`.trimStart(),
   header: '┌─〔 %category 〕',
