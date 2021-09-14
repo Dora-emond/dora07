@@ -15,7 +15,6 @@ let handler = async (m, { conn, usedPrefix }) => {
     if (!json.status) throw json
     let caption = `
 Siapakah aku? ${json.result.soal}
-
 Timeout *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}who untuk bantuan
 Bonus: ${poin} XP
