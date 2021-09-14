@@ -18,7 +18,7 @@ const defaultMenu = {
 ├ Uptime: *%uptime (%muptime)*
 ├ Database: %rtotalreg dari %totalreg
 │
-├ Thank buat para creator bot 😇
+├ Thank buat pengocoks bot 
 │
 ├ Berusahalah untuk patah semangat
 ├ dan tetaplah menjadi pecundang
