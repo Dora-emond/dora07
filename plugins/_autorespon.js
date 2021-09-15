@@ -32,7 +32,7 @@ handler.all = async function (m, { isBlocked }) {
 ├ 30 Hari / Rp 10,000
 └────
 
-https://github.com/Dora-emond/dora07
+Hubungi owner jika mau undang ke group
 `.trim(), '© doraemond', 'PEMILIK BOT', ',owner', { contextInfo: { mentionedJid: [global.owner[0] + '@s.whatsapp.net'] } })
     }
 
