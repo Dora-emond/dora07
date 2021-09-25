@@ -18,7 +18,7 @@ const defaultMenu = {
 ├ Uptime: *%uptime (%muptime)*
 ├ Database: %rtotalreg dari %totalreg
 │
-├ https://chat.whatsapp.com/CHQTYzLQF0i4gvQa5cnZ2z
+├├Terimaksih buat para member saya semua :D
 │
 ├ Berusahalah untuk patah semangat
 ├ dan tetaplah menjadi pecundang
