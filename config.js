@@ -33,9 +33,12 @@ global.APIKeys = { // APIKey nya disini
 global.packname = 'aku sayang kamu'
 global.author = 'Dora'
 
-global.multiplier = 69 // The higher, The harder levelup
+global.wait = '_*tunggu..*_'
+global.eror = '_*Server Error*_'
+global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 
-let fs = require('fs')
+global.multiplier = 69 // Semakin tinggi, semakin sulit naik level
+
 let chalk = require('chalk')
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
