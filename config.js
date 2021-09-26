@@ -30,10 +30,10 @@ global.APIKeys = { // APIKey nya disini
 }
 
 // Sticker WM
-global.packname = 'aku sayang kamu \'Dora'//GANTI WM MU
-global.author = '😇'
+global.packname = 'aku sayang kamu'
+global.author = 'Dora'
 
-global.multiplier = 39 // The higher, The harder levelup
+global.multiplier = 69 // The higher, The harder levelup
 
 let fs = require('fs')
 let chalk = require('chalk')
