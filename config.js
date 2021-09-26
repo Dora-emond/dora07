@@ -30,13 +30,12 @@ global.APIKeys = { // APIKey nya disini
 }
 
 // Sticker WM
-global.packname = 'aku sayang kamu'
-global.author = 'dora'
+global.packname = 'aku sayang kamu \'Dora'//GANTI WM MU
+global.author = '😇'
 
-global.wait = '_*tunggu..*_'
+global.multiplier = 39 // The higher, The harder levelup
 
-global.multiplier = 69 // Semakin tinggi, semakin sulit naik level
-
+let fs = require('fs')
 let chalk = require('chalk')
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
