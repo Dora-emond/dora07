@@ -7,18 +7,15 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let mime = (q.msg || q).mimetype || ''
     if (/image/.test(mime)) {
       let img = await q.download()
-      m.reply(`Await....`)
       if (!img) throw `balas gambar dengan caption *${usedPrefix + command}*`
       stiker = await sticker(img, false, global.packname, global.author)
     } else if (/video/.test(mime)) {
       if ((q.msg || q).seconds > 11) return m.reply('Maksimal 10 detik!')
       let img = await q.download()
-      m.reply(`Await....`)
       if (!img) throw `balas video/gif dengan caption *${usedPrefix + command}*`
       stiker = await sticker(img, false, global.packname, global.author)
     } else if (/webp/.test(mime)) {
       let img = await q.download()
-      m.reply(`Await....`)
       if (!img) throw `balas sticker dengan caption *${usedPrefix + command}*`
       stiker = await sticker(img, false, global.packname, global.author)
     } else if (args[0]) {
@@ -29,7 +26,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (stiker) conn.sendMessage(m.chat, stiker, MessageType.sticker, {
       quoted: m
     })
-    else throw '*IND:* Gagal membuat sticker, Sepertinya ada yg salah!\n\n*EN:* failed to make a sticker, something seems wrong!'
+    else throw 'Conversion failed'
   }
 }
 handler.help = ['stiker (caption|reply media)', 'stiker <url>', 'stikergif (caption|reply media)', 'stikergif <url>']
